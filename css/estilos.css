@@ -129,6 +129,8 @@ h1{
     margin-top:20px;
     font-weight:bold;
     min-height:30px;
+    line-height:1.45;
+    white-space:pre-line;
 }
 
 #btnSiguiente{

@@ -240,6 +240,30 @@ function inicializarTema(){
 
 totalPreguntas.textContent = bancoPreguntas.length;
 
+function construirFeedback(p, encabezado){
+
+    var lineas = [encabezado];
+
+    if(p.explicacion){
+        lineas.push(
+            "Explicacion: " +
+            p.explicacion
+        );
+    }
+
+    if(
+        Array.isArray(p.bibliografia) &&
+        p.bibliografia.length > 0
+    ){
+        lineas.push(
+            "Bibliografia: " +
+            p.bibliografia.join(" | ")
+        );
+    }
+
+    return lineas.join("\n");
+}
+
 function cargarPregunta(){
 
     respondida = false;
@@ -289,7 +313,10 @@ function cargarPregunta(){
                     );
 
                     feedback.textContent =
-                        "Correcto";
+                        construirFeedback(
+                            p,
+                            "Correcto"
+                        );
 
                     correctas++;
 
@@ -302,9 +329,20 @@ function cargarPregunta(){
                         "incorrecta"
                     );
 
+                    var textoCorrecta =
+                        p.opciones[p.correcta]
+                        ? " (" +
+                          p.opciones[p.correcta] +
+                          ")"
+                        : "";
+
                     feedback.textContent =
-                        "Incorrecto. Respuesta correcta: "
-                        + p.correcta;
+                        construirFeedback(
+                            p,
+                            "Incorrecto. Respuesta correcta: " +
+                            p.correcta +
+                            textoCorrecta
+                        );
 
                     mostrarCorrecta(
                         p.correcta
