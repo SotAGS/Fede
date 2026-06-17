@@ -32,6 +32,96 @@ function mezclarArray(lista){
     return copia;
 }
 
+function normalizarPregunta(p){
+
+    if(!p || typeof p !== "object"){
+        return null;
+    }
+
+    var textoPregunta =
+        (p.pregunta || "")
+        .toString()
+        .trim();
+
+    if(!textoPregunta){
+        return null;
+    }
+
+    var letras = ["A", "B", "C", "D"];
+    var opcionesNormalizadas = {};
+
+    if(Array.isArray(p.opciones)){
+
+        letras.forEach(function(letra, idx){
+            opcionesNormalizadas[letra] =
+                p.opciones[idx] || "";
+        });
+
+    }else if(
+        p.opciones &&
+        typeof p.opciones === "object"
+    ){
+
+        letras.forEach(function(letra){
+            opcionesNormalizadas[letra] =
+                p.opciones[letra] || "";
+        });
+    }else{
+        return null;
+    }
+
+    var correcta = "";
+
+    if(typeof p.correcta === "string"){
+        correcta =
+            p.correcta.trim().toUpperCase();
+    }
+
+    if(
+        !correcta &&
+        (typeof p.respuesta === "number" ||
+         typeof p.respuesta === "string")
+    ){
+
+        var respuestaNumero =
+            Number(p.respuesta);
+
+        if(!isNaN(respuestaNumero)){
+
+            var indiceCorrecta =
+                (respuestaNumero >= 0 &&
+                 respuestaNumero <= 3)
+                ? respuestaNumero
+                : (respuestaNumero >= 1 &&
+                   respuestaNumero <= 4)
+                  ? (respuestaNumero - 1)
+                  : -1;
+
+            if(indiceCorrecta >= 0){
+                correcta =
+                    letras[indiceCorrecta];
+            }
+        }
+    }
+
+    if(letras.indexOf(correcta) === -1){
+        return null;
+    }
+
+    return {
+        pregunta: textoPregunta,
+        tema: p.tema || "General",
+        subtema: p.subtema || "Sin subtema",
+        opciones: opcionesNormalizadas,
+        correcta: correcta,
+        explicacion: p.explicacion || "",
+        bibliografia:
+            Array.isArray(p.bibliografia)
+            ? p.bibliografia
+            : []
+    };
+}
+
 function prepararBanco(preguntas){
 
     return preguntas.map(function(p){
@@ -84,14 +174,15 @@ function seleccionarPorBanco(
 
     var seleccionadas = [];
 
+    if(!Array.isArray(banco)){
+        return seleccionadas;
+    }
+
     var bancoLimpio =
-        banco.filter(function(p){
-            return (
-                p &&
-                p.pregunta &&
-                p.opciones &&
-                typeof p.opciones === "object"
-            );
+        banco
+        .map(normalizarPregunta)
+        .filter(function(p){
+            return !!p;
         });
 
     var mezcladas =

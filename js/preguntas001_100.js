@@ -1,2416 +1,1104 @@
 // Banco de preguntas 001-100
-var preguntas001_100 = [
+const preguntas001_100 = [
 
 {
- id:1,
- tema:"Cardiología",
- subtema:"Insuficiencia Cardíaca",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el biomarcador más utilizado para apoyar el diagnóstico de insuficiencia cardíaca?",
-
- opciones:{
-  A:"Troponina I",
-  B:"BNP",
-  C:"CK-MB",
-  D:"Dímero D"
- },
-
- correcta:"B",
-
- explicacion:"El BNP se libera por la distensión ventricular y es uno de los biomarcadores más utilizados para apoyar el diagnóstico de insuficiencia cardíaca.",
-
- bibliografia:[
-  "Harrison - Insuficiencia Cardíaca",
-  "Guías Argentinas de Insuficiencia Cardíaca"
- ]
+pregunta:"Hombre de 67 años consulta por disnea progresiva de 3 meses. Refiere ortopnea y edema de miembros inferiores. TA 130/80 mmHg, FC 95 lpm. En el examen presenta ingurgitación yugular y crépitos bibasales. ¿Cuál es el estudio inicial más útil para confirmar la sospecha diagnóstica?",
+opciones:[
+"Tomografía de tórax con contraste.",
+"Ecocardiograma transtorácico.",
+"Prueba ergométrica.",
+"Centellograma de ventilación/perfusión."
+],
+respuesta:1
 },
 
 {
- id:2,
- tema:"Cardiología",
- subtema:"Insuficiencia Cardíaca",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el síntoma más frecuente de insuficiencia cardíaca?",
-
- opciones:{
-  A:"Disnea",
-  B:"Hemoptisis",
-  C:"Hematuria",
-  D:"Disfagia"
- },
-
- correcta:"A",
-
- explicacion:"La disnea de esfuerzo es el síntoma más frecuente y suele ser la forma de presentación inicial.",
-
- bibliografia:[
-  "Harrison - Enfermedades Cardiovasculares"
- ]
+pregunta:"Mujer de 72 años consulta por pérdida de peso involuntaria, astenia y anemia ferropénica. Niega sangrado visible. ¿Cuál es la conducta diagnóstica más apropiada?",
+opciones:[
+"Iniciar hierro oral y reevaluar en 6 meses.",
+"Solicitar colonoscopia completa.",
+"Solicitar únicamente sangre oculta en materia fecal.",
+"Realizar transfusión de glóbulos rojos."
+],
+respuesta:1
 },
 
 {
- id:3,
- tema:"Cardiología",
- subtema:"Fibrilación Auricular",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la arritmia sostenida más frecuente en la práctica clínica?",
-
- opciones:{
-  A:"Flutter auricular",
-  B:"Fibrilación auricular",
-  C:"Taquicardia ventricular",
-  D:"BAV completo"
- },
-
- correcta:"B",
-
- explicacion:"La fibrilación auricular es la arritmia sostenida más frecuente en adultos.",
-
- bibliografia:[
-  "Harrison - Arritmias"
- ]
+pregunta:"Paciente de 58 años con antecedente de tabaquismo de 40 paquetes/año presenta hemoptisis escasa persistente. La radiografía muestra una imagen sospechosa en lóbulo superior derecho. ¿Cuál es el siguiente paso más apropiado?",
+opciones:[
+"Control radiológico en 12 meses.",
+"Tomografía de tórax de alta resolución.",
+"Iniciar antibióticos empíricos.",
+"Solicitar espirometría como único estudio."
+],
+respuesta:1
 },
 
 {
- id:4,
- tema:"Cardiología",
- subtema:"Fibrilación Auricular",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la complicación más temida de la fibrilación auricular?",
-
- opciones:{
-  A:"Endocarditis",
-  B:"ACV cardioembólico",
-  C:"Pericarditis",
-  D:"Miocarditis"
- },
-
- correcta:"B",
-
- explicacion:"La formación de trombos auriculares incrementa significativamente el riesgo de ACV.",
-
- bibliografia:[
-  "Guías Argentinas de Fibrilación Auricular"
- ]
+pregunta:"Varón de 64 años consulta por síncope durante una caminata. Presenta soplo sistólico eyectivo intenso en foco aórtico irradiado a carótidas. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Insuficiencia mitral.",
+"Estenosis aórtica severa.",
+"Comunicación interauricular.",
+"Pericarditis constrictiva."
+],
+respuesta:1
 },
 
 {
- id:5,
- tema:"Cardiología",
- subtema:"Síndrome Coronario Agudo",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el biomarcador más sensible y específico para infarto agudo de miocardio?",
-
- opciones:{
-  A:"LDH",
-  B:"Troponina",
-  C:"Mioglobina",
-  D:"CPK Total"
- },
-
- correcta:"B",
-
- explicacion:"Las troponinas son el estándar actual para confirmar necrosis miocárdica.",
-
- bibliografia:[
-  "Harrison - Cardiopatía Isquémica"
- ]
+pregunta:"Paciente de 76 años internado por neumonía desarrolla confusión aguda fluctuante, inversión del ciclo sueño-vigilia y desatención. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Demencia vascular.",
+"Delirium.",
+"Trastorno depresivo mayor.",
+"Enfermedad de Alzheimer."
+],
+respuesta:1
 },
 
 {
- id:6,
- tema:"Cardiología",
- subtema:"Hipertensión Arterial",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el principal factor de riesgo modificable para ACV?",
-
- opciones:{
-  A:"Hipertensión arterial",
-  B:"Sexo masculino",
-  C:"Edad",
-  D:"Antecedentes familiares"
- },
-
- correcta:"A",
-
- explicacion:"La hipertensión arterial es el principal factor de riesgo modificable para accidente cerebrovascular.",
-
- bibliografia:[
-  "Guías Argentinas de Hipertensión"
- ]
+pregunta:"Mujer de 65 años con fibrilación auricular permanente consulta para control. CHA2DS2-VASc = 4. ¿Cuál es la estrategia más adecuada?",
+opciones:[
+"Aspirina como monoterapia.",
+"Anticoagulación oral crónica.",
+"Control exclusivo de frecuencia cardíaca.",
+"Ningún tratamiento específico."
+],
+respuesta:1
 },
 
 {
- id:7,
- tema:"Cardiología",
- subtema:"Estenosis Aórtica",
- dificultad:"Difícil",
-
- pregunta:"¿Cuál es la tríada clásica de la estenosis aórtica severa?",
-
- opciones:{
-  A:"Angina, síncope y disnea",
-  B:"Fiebre, edema y tos",
-  C:"Disnea, hematuria y síncope",
-  D:"Ascitis, edema y hemoptisis"
- },
-
- correcta:"A",
-
- explicacion:"La tríada clásica indica enfermedad avanzada y peor pronóstico.",
-
- bibliografia:[
-  "Harrison - Valvulopatías"
- ]
+pregunta:"Hombre de 70 años con EPOC presenta aumento de disnea, expectoración purulenta y volumen de esputo. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Crisis asmática.",
+"Exacerbación infecciosa de EPOC.",
+"Neumotórax espontáneo.",
+"Edema agudo de pulmón."
+],
+respuesta:1
 },
 
 {
- id:8,
- tema:"Cardiología",
- subtema:"Pericarditis",
- dificultad:"Media",
-
- pregunta:"¿Qué característica tiene el dolor de la pericarditis aguda?",
-
- opciones:{
-  A:"Mejora al inclinarse hacia adelante",
-  B:"Mejora con ejercicio",
-  C:"Aumenta después de comer",
-  D:"Irradia a miembros inferiores"
- },
-
- correcta:"A",
-
- explicacion:"El dolor pericárdico mejora al inclinar el tronco hacia adelante y empeora en decúbito.",
-
- bibliografia:[
-  "Harrison - Enfermedades del Pericardio"
- ]
+pregunta:"Paciente de 60 años consulta por dolor torácico opresivo de 30 minutos de duración en reposo. ECG normal. Troponinas negativas iniciales. ¿Qué conducta es más apropiada?",
+opciones:[
+"Alta inmediata.",
+"Observación con seriación de biomarcadores.",
+"Indicar antiácidos y control ambulatorio.",
+"Solicitar únicamente radiografía de tórax."
+],
+respuesta:1
 },
 
 {
- id:9,
- tema:"Cardiología",
- subtema:"Endocarditis",
- dificultad:"Difícil",
-
- pregunta:"¿Cuál es el microorganismo más frecuente en endocarditis infecciosa sobre válvula nativa?",
-
- opciones:{
-  A:"Candida albicans",
-  B:"Staphylococcus aureus",
-  C:"Brucella",
-  D:"Coxiella burnetii"
- },
-
- correcta:"B",
-
- explicacion:"Staphylococcus aureus es actualmente el agente más frecuente.",
-
- bibliografia:[
-  "Harrison - Endocarditis Infecciosa"
- ]
+pregunta:"Mujer de 68 años presenta hipercalcemia, constipación y deterioro cognitivo. ¿Cuál es la primera medida terapéutica?",
+opciones:[
+"Vitamina D.",
+"Hidratación intravenosa con solución fisiológica.",
+"Bifosfonatos orales exclusivamente.",
+"Restricción hídrica."
+],
+respuesta:1
 },
 
 {
- id:10,
- tema:"Cardiología",
- subtema:"Miocardiopatía Hipertrófica",
- dificultad:"Difícil",
-
- pregunta:"¿Qué maniobra aumenta el soplo de la miocardiopatía hipertrófica obstructiva?",
-
- opciones:{
-  A:"Valsalva",
-  B:"Cuclillas",
-  C:"Elevación de piernas",
-  D:"Handgrip"
- },
-
- correcta:"A",
-
- explicacion:"La maniobra de Valsalva reduce la precarga y aumenta la obstrucción dinámica.",
-
- bibliografia:[
-  "Harrison - Miocardiopatías"
- ]
+pregunta:"Varón de 74 años consulta por claudicación intermitente a 100 metros. Pulsos pedios disminuidos. ¿Cuál es el estudio inicial más apropiado?",
+opciones:[
+"Angiografía convencional.",
+"Índice tobillo-brazo.",
+"Resonancia magnética vascular.",
+"Ecocardiograma."
+],
+respuesta:1
 },
 
 {
- id:11,
- tema:"Infectología",
- subtema:"VIH",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la prueba de screening recomendada para VIH?",
-
- opciones:{
-  A:"Western Blot",
-  B:"Prueba de cuarta generación",
-  C:"Carga viral",
-  D:"CD4"
- },
-
- correcta:"B",
-
- explicacion:"Las pruebas de cuarta generación detectan antígeno p24 y anticuerpos.",
-
- bibliografia:[
-  "Guías Argentinas VIH"
- ]
+pregunta:"Paciente con fiebre prolongada, soplo cardíaco nuevo y hemocultivos positivos para Streptococcus. ¿Cuál es el estudio clave para confirmar la sospecha diagnóstica?",
+opciones:[
+"Radiografía de tórax.",
+"Ecocardiograma.",
+"Espirometría.",
+"Ergometría."
+],
+respuesta:1
 },
 
 {
- id:12,
- tema:"Infectología",
- subtema:"VIH",
- dificultad:"Media",
-
- pregunta:"¿Con qué nivel de CD4 se recomienda profilaxis para Pneumocystis jirovecii?",
-
- opciones:{
-  A:"<500",
-  B:"<350",
-  C:"<200",
-  D:"<100"
- },
-
- correcta:"C",
-
- explicacion:"La profilaxis con TMP-SMX se indica habitualmente con CD4 menores de 200 células/mm³.",
-
- bibliografia:[
-  "Harrison - VIH"
- ]
+pregunta:"Mujer de 63 años con antecedente de osteoporosis presenta fractura vertebral por fragilidad. ¿Qué conducta corresponde?",
+opciones:[
+"Calcio aislado.",
+"Iniciar tratamiento antiresortivo y estudio etiológico.",
+"Reposo prolongado.",
+"Ninguna medida adicional."
+],
+respuesta:1
 },
 
 {
- id:13,
- tema:"Infectología",
- subtema:"Tuberculosis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el esquema inicial estándar para tuberculosis sensible?",
-
- opciones:{
-  A:"HRZE",
-  B:"HR",
-  C:"ZE",
-  D:"H"
- },
-
- correcta:"A",
-
- explicacion:"El tratamiento inicial incluye Isoniazida, Rifampicina, Pirazinamida y Etambutol.",
-
- bibliografia:[
-  "Guías Argentinas de Tuberculosis"
- ]
+pregunta:"Paciente de 59 años consulta por cefalea temporal, claudicación mandibular y VSG elevada. ¿Cuál es la conducta inmediata más importante?",
+opciones:[
+"Solicitar biopsia y esperar resultado.",
+"Iniciar corticoides sistémicos.",
+"Solicitar resonancia cerebral.",
+"Indicar AINEs."
+],
+respuesta:1
 },
 
 {
- id:14,
- tema:"Infectología",
- subtema:"Tuberculosis",
- dificultad:"Media",
-
- pregunta:"¿Qué vitamina debe administrarse junto con isoniazida?",
-
- opciones:{
-  A:"Vitamina C",
-  B:"Piridoxina",
-  C:"Vitamina K",
-  D:"Vitamina A"
- },
-
- correcta:"B",
-
- explicacion:"La piridoxina previene la neuropatía periférica inducida por isoniazida.",
-
- bibliografia:[
-  "Harrison - Tuberculosis"
- ]
+pregunta:"Varón de 66 años con creatinina en ascenso y uso reciente de AINEs. ¿Cuál es la causa más probable de insuficiencia renal aguda?",
+opciones:[
+"Glomerulonefritis rápidamente progresiva.",
+"Nefrotoxicidad farmacológica.",
+"Obstrucción ureteral bilateral.",
+"Amiloidosis."
+],
+respuesta:1
 },
 
 {
- id:15,
- tema:"Infectología",
- subtema:"Dengue",
- dificultad:"Media",
-
- pregunta:"¿Cuál es un signo de alarma de dengue?",
-
- opciones:{
-  A:"Dolor abdominal intenso",
-  B:"Rinorrea",
-  C:"Tos seca",
-  D:"Otalgia"
- },
-
- correcta:"A",
-
- explicacion:"El dolor abdominal intenso es un signo de alarma asociado a evolución desfavorable.",
-
- bibliografia:[
-  "Guías Argentinas de Dengue"
- ]
+pregunta:"Paciente de 71 años presenta anemia macrocítica y parestesias distales progresivas. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Déficit de hierro.",
+"Déficit de vitamina B12.",
+"Anemia de enfermedad crónica.",
+"Talasemia."
+],
+respuesta:1
 },
 
 {
- id:16,
- tema:"Infectología",
- subtema:"Endocarditis",
- dificultad:"Difícil",
-
- pregunta:"¿Cuál es el estudio más sensible para detectar vegetaciones pequeñas?",
-
- opciones:{
-  A:"ECG",
-  B:"Ecocardiograma transesofágico",
-  C:"Radiografía",
-  D:"Tomografía"
- },
-
- correcta:"B",
-
- explicacion:"El ecocardiograma transesofágico tiene mayor sensibilidad que el transtorácico.",
-
- bibliografia:[
-  "Harrison - Endocarditis"
- ]
+pregunta:"Mujer de 62 años con artritis reumatoidea presenta disnea progresiva. ¿Qué complicación debe sospecharse?",
+opciones:[
+"Hipertensión portal.",
+"Enfermedad pulmonar intersticial.",
+"Miastenia gravis.",
+"Pancreatitis crónica."
+],
+respuesta:1
 },
 
 {
- id:17,
- tema:"Infectología",
- subtema:"Meningitis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el agente más frecuente de meningitis bacteriana adquirida en la comunidad en adultos?",
-
- opciones:{
-  A:"Listeria monocytogenes",
-  B:"Streptococcus pneumoniae",
-  C:"Haemophilus influenzae",
-  D:"E. coli"
- },
-
- correcta:"B",
-
- explicacion:"Streptococcus pneumoniae es el agente más frecuente en adultos.",
-
- bibliografia:[
-  "Harrison - Infecciones del SNC"
- ]
+pregunta:"Paciente de 69 años con inmovilización prolongada consulta por disnea súbita y dolor pleurítico. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Neumonía adquirida en la comunidad.",
+"Tromboembolismo pulmonar.",
+"Exacerbación de EPOC.",
+"Pericarditis viral."
+],
+respuesta:1
 },
 
 {
- id:18,
- tema:"Infectología",
- subtema:"Leptospirosis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el principal reservorio de la leptospirosis?",
-
- opciones:{
-  A:"Perros",
-  B:"Roedores",
-  C:"Aves",
-  D:"Caballos"
- },
-
- correcta:"B",
-
- explicacion:"Los roedores eliminan leptospiras por orina y constituyen el principal reservorio.",
-
- bibliografia:[
-  "Guías Argentinas de Leptospirosis"
- ]
+pregunta:"Varón de 75 años con pérdida brusca de visión monocular indolora. ¿Cuál es la causa más probable?",
+opciones:[
+"Desprendimiento de retina exclusivamente.",
+"Oclusión arterial retiniana.",
+"Conjuntivitis aguda.",
+"Catarata."
+],
+respuesta:1
 },
 
 {
- id:19,
- tema:"Infectología",
- subtema:"COVID-19",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la complicación respiratoria grave más frecuente?",
-
- opciones:{
-  A:"Asma",
-  B:"SDRA",
-  C:"Bronquiectasias",
-  D:"Neumotórax espontáneo"
- },
-
- correcta:"B",
-
- explicacion:"El síndrome de distrés respiratorio agudo es la complicación pulmonar más grave.",
-
- bibliografia:[
-  "Harrison - COVID-19"
- ]
+pregunta:"Paciente de 67 años consulta por edema generalizado y proteinuria masiva. ¿Cuál es el síndrome presente?",
+opciones:[
+"Síndrome nefrítico.",
+"Síndrome nefrótico.",
+"Hepatitis fulminante.",
+"Insuficiencia suprarrenal."
+],
+respuesta:1
 },
 
 {
- id:20,
- tema:"Infectología",
- subtema:"Brucelosis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el patrón clásico de fiebre en brucelosis?",
-
- opciones:{
-  A:"Continua",
-  B:"Ondulante",
-  C:"Intermitente diaria",
-  D:"Ausente"
- },
-
- correcta:"B",
-
- explicacion:"La fiebre ondulante es una característica clásica de la enfermedad.",
-
- bibliografia:[
-  "Harrison - Brucelosis"
- ]
+pregunta:"Mujer de 64 años con antecedente de cáncer de mama presenta dolor lumbar nocturno persistente. ¿Cuál es la principal sospecha?",
+opciones:[
+"Lumbalgia mecánica.",
+"Metástasis ósea.",
+"Fibromialgia.",
+"Artrosis lumbar."
+],
+respuesta:1
 },
 
 {
- id:21,
- tema:"Neumonología",
- subtema:"EPOC",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la principal medida para modificar la evolución del EPOC?",
-
- opciones:{
-  A:"Mucolíticos",
-  B:"Suspensión del tabaquismo",
-  C:"Antibióticos",
-  D:"Oxigenoterapia"
- },
-
- correcta:"B",
-
- explicacion:"Abandonar el tabaquismo es la intervención con mayor impacto pronóstico.",
-
- bibliografia:[
-  "Guías Argentinas EPOC"
- ]
+pregunta:"Paciente de 61 años con diabetes presenta úlcera plantar profunda. ¿Cuál es la prioridad inicial?",
+opciones:[
+"Indicar únicamente antibióticos orales.",
+"Evaluar compromiso vascular e infeccioso.",
+"Reposo absoluto sin estudios.",
+"Corticoides sistémicos."
+],
+respuesta:1
 },
 
 {
- id:22,
- tema:"Neumonología",
- subtema:"EPOC",
- dificultad:"Media",
-
- pregunta:"¿Qué patrón espirométrico caracteriza al EPOC?",
-
- opciones:{
-  A:"Restrictivo",
-  B:"Obstructivo",
-  C:"Normal",
-  D:"Mixto obligatorio"
- },
-
- correcta:"B",
-
- explicacion:"La obstrucción persistente al flujo aéreo es la característica funcional principal.",
-
- bibliografia:[
-  "Harrison - EPOC"
- ]
+pregunta:"Varón de 72 años consulta por temblor de reposo, rigidez y bradicinesia. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Temblor esencial.",
+"Enfermedad de Parkinson.",
+"Corea de Huntington.",
+"Esclerosis múltiple."
+],
+respuesta:1
 },
 
 {
- id:23,
- tema:"Neumonología",
- subtema:"Asma",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el tratamiento controlador de base más importante?",
-
- opciones:{
-  A:"Salbutamol",
-  B:"Corticoides inhalados",
-  C:"Antibióticos",
-  D:"Oxígeno"
- },
-
- correcta:"B",
-
- explicacion:"Los corticoides inhalados son la piedra angular del tratamiento controlador.",
-
- bibliografia:[
-  "GINA",
-  "Harrison - Asma"
- ]
+pregunta:"Paciente de 68 años con ascitis de reciente aparición y antecedente de alcoholismo crónico. ¿Qué estudio es imprescindible inicialmente?",
+opciones:[
+"Colonoscopia.",
+"Paracentesis diagnóstica.",
+"Ergometría.",
+"Tomografía cerebral."
+],
+respuesta:1
 },
 
 {
- id:24,
- tema:"Neumonología",
- subtema:"TEP",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el síntoma más frecuente del tromboembolismo pulmonar?",
-
- opciones:{
-  A:"Disnea",
-  B:"Hemoptisis",
-  C:"Dolor abdominal",
-  D:"Estridor"
- },
-
- correcta:"A",
-
- explicacion:"La disnea súbita es la manifestación clínica más frecuente.",
-
- bibliografia:[
-  "Harrison - Tromboembolismo Pulmonar"
- ]
+pregunta:"Mujer de 66 años con fibrilación auricular consulta por dolor abdominal intenso desproporcionado al examen físico. ¿Qué diagnóstico debe sospecharse?",
+opciones:[
+"Colecistitis aguda.",
+"Isquemia mesentérica aguda.",
+"Diverticulitis.",
+"Gastritis erosiva."
+],
+respuesta:1
 },
 
 {
- id:25,
- tema:"Neumonología",
- subtema:"Neumonía",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el agente etiológico más frecuente de neumonía adquirida en la comunidad?",
-
- opciones:{
-  A:"Legionella pneumophila",
-  B:"Streptococcus pneumoniae",
-  C:"Mycoplasma pneumoniae",
-  D:"Klebsiella pneumoniae"
- },
-
- correcta:"B",
-
- explicacion:"Streptococcus pneumoniae continúa siendo el agente más frecuente de NAC.",
-
- bibliografia:[
-  "Harrison - Neumonía",
-  "Guías Argentinas NAC"
- ]
+pregunta:"Varón de 70 años presenta hiponatremia severa sintomática con convulsiones. ¿Cuál es la conducta inicial correcta?",
+opciones:[
+"Restricción hídrica exclusiva.",
+"Solución salina hipertónica cuidadosamente monitorizada.",
+"Diuréticos tiazídicos.",
+"Observación clínica."
+],
+respuesta:1
 },
 
 {
- id:26,
- tema:"Gastroenterología",
- subtema:"Hemorragia Digestiva Alta",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la causa más frecuente de hemorragia digestiva alta no variceal?",
-
- opciones:{
-  A:"Úlcera péptica",
-  B:"Mallory-Weiss",
-  C:"Angiodisplasia",
-  D:"Neoplasia"
- },
-
- correcta:"A",
-
- explicacion:"La úlcera péptica continúa siendo la causa más frecuente de hemorragia digestiva alta no variceal.",
-
- bibliografia:[
-  "Harrison - Hemorragia Digestiva"
- ]
+pregunta:"Hombre de 58 años consulta por fiebre, tos productiva y dolor pleurítico derecho. La radiografía muestra consolidación lobar inferior derecha. CURB-65 = 0. ¿Cuál es la conducta más adecuada?",
+opciones:[
+"Internación en sala general con antibióticos intravenosos.",
+"Alta con tratamiento antibiótico ambulatorio y seguimiento.",
+"Internación en terapia intensiva.",
+"Observación sin antibióticos hasta obtener cultivos."
+],
+respuesta:1
 },
 
 {
- id:27,
- tema:"Gastroenterología",
- subtema:"Cirrosis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la causa más frecuente de ascitis en pacientes cirróticos?",
-
- opciones:{
-  A:"Hipertensión portal",
-  B:"Peritonitis",
-  C:"Insuficiencia pancreática",
-  D:"Colelitiasis"
- },
-
- correcta:"A",
-
- explicacion:"La hipertensión portal es el principal mecanismo fisiopatológico de la ascitis cirrótica.",
-
- bibliografia:[
-  "Harrison - Cirrosis Hepática"
- ]
+pregunta:"Mujer de 70 años consulta por pérdida brusca de fuerza en brazo izquierdo de 15 minutos de duración. Actualmente está asintomática. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Migraña con aura.",
+"Accidente isquémico transitorio.",
+"Crisis epiléptica focal.",
+"Hipoglucemia."
+],
+respuesta:1
 },
 
 {
- id:28,
- tema:"Gastroenterología",
- subtema:"Cirrosis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la complicación infecciosa más frecuente de la ascitis cirrótica?",
-
- opciones:{
-  A:"Peritonitis bacteriana espontánea",
-  B:"Colecistitis",
-  C:"Diverticulitis",
-  D:"Absceso hepático"
- },
-
- correcta:"A",
-
- explicacion:"La peritonitis bacteriana espontánea es una complicación frecuente y potencialmente mortal.",
-
- bibliografia:[
-  "Guías Argentinas de Cirrosis"
- ]
+pregunta:"Paciente de 65 años con antecedentes de HTA consulta por cefalea intensa súbita descrita como 'la peor de su vida'. ¿Cuál es el diagnóstico que debe descartarse primero?",
+opciones:[
+"Neuralgia del trigémino.",
+"Hemorragia subaracnoidea.",
+"Sinusitis aguda.",
+"Cefalea tensional."
+],
+respuesta:1
 },
 
 {
- id:29,
- tema:"Gastroenterología",
- subtema:"Pancreatitis Aguda",
- dificultad:"Media",
-
- pregunta:"¿Cuáles son las dos causas más frecuentes de pancreatitis aguda?",
-
- opciones:{
-  A:"Alcohol y litiasis biliar",
-  B:"ERGE y gastritis",
-  C:"Crohn y colitis ulcerosa",
-  D:"Apendicitis y hepatitis"
- },
-
- correcta:"A",
-
- explicacion:"Alcohol y litiasis biliar explican la mayoría de los casos de pancreatitis aguda.",
-
- bibliografia:[
-  "Harrison - Páncreas"
- ]
+pregunta:"Varón de 73 años con insuficiencia cardíaca presenta aumento progresivo de disnea y edema. Saturación 88%. ¿Cuál es la medida terapéutica inicial más apropiada?",
+opciones:[
+"Administrar solución fisiológica.",
+"Oxígeno y diuréticos de asa.",
+"Corticoides sistémicos.",
+"Antibióticos empíricos."
+],
+respuesta:1
 },
 
 {
- id:30,
- tema:"Gastroenterología",
- subtema:"Pancreatitis Aguda",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el síntoma cardinal de la pancreatitis aguda?",
-
- opciones:{
-  A:"Dolor epigástrico intenso",
-  B:"Disuria",
-  C:"Hemoptisis",
-  D:"Síncope"
- },
-
- correcta:"A",
-
- explicacion:"El dolor epigástrico irradiado a dorso es característico de pancreatitis aguda.",
-
- bibliografia:[
-  "Harrison - Pancreatitis"
- ]
+pregunta:"Paciente diabético de 67 años presenta dolor torácico opresivo y diaforesis. ECG normal. ¿Cuál es el siguiente paso?",
+opciones:[
+"Dar de alta por ECG normal.",
+"Solicitar troponinas seriadas y observación.",
+"Indicar antiácidos.",
+"Solicitar únicamente radiografía de tórax."
+],
+respuesta:1
 },
 
 {
- id:31,
- tema:"Gastroenterología",
- subtema:"ERGE",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el tratamiento farmacológico inicial de elección?",
-
- opciones:{
-  A:"IBP",
-  B:"Corticoides",
-  C:"Antibióticos",
-  D:"Procinéticos exclusivamente"
- },
-
- correcta:"A",
-
- explicacion:"Los inhibidores de la bomba de protones constituyen el tratamiento farmacológico de elección.",
-
- bibliografia:[
-  "Harrison - ERGE"
- ]
+pregunta:"Mujer de 64 años con anemia ferropénica y colonoscopia normal. ¿Cuál es el siguiente estudio más apropiado?",
+opciones:[
+"Suspender estudio y administrar hierro.",
+"Endoscopia digestiva alta.",
+"Resonancia cerebral.",
+"Ecocardiograma."
+],
+respuesta:1
 },
 
 {
- id:32,
- tema:"Gastroenterología",
- subtema:"Enfermedad Celíaca",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el anticuerpo más utilizado para screening?",
-
- opciones:{
-  A:"Anti-transglutaminasa IgA",
-  B:"ANA",
-  C:"ANCA",
-  D:"AMA"
- },
-
- correcta:"A",
-
- explicacion:"Los anticuerpos anti-transglutaminasa IgA tienen alta sensibilidad y especificidad.",
-
- bibliografia:[
-  "Harrison - Enfermedad Celíaca"
- ]
+pregunta:"Paciente de 62 años con EPOC consulta por empeoramiento progresivo de la disnea. Presenta tórax silencioso y uso de músculos accesorios. ¿Cuál es el hallazgo más preocupante?",
+opciones:[
+"Sibilancias difusas.",
+"Disminución marcada de ruidos respiratorios.",
+"Tos productiva.",
+"Taquicardia leve."
+],
+respuesta:1
 },
 
 {
- id:33,
- tema:"Gastroenterología",
- subtema:"Crohn",
- dificultad:"Media",
-
- pregunta:"¿Qué segmento digestivo se afecta con mayor frecuencia?",
-
- opciones:{
-  A:"Íleon terminal",
-  B:"Recto exclusivamente",
-  C:"Esófago",
-  D:"Duodeno"
- },
-
- correcta:"A",
-
- explicacion:"El íleon terminal es la localización más frecuente de la enfermedad de Crohn.",
-
- bibliografia:[
-  "Harrison - Enfermedad Inflamatoria Intestinal"
- ]
+pregunta:"Hombre de 68 años con FA presenta dolor y frialdad brusca en miembro inferior derecho. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Trombosis venosa profunda.",
+"Isquemia arterial aguda.",
+"Linfedema.",
+"Celulitis."
+],
+respuesta:1
 },
 
 {
- id:34,
- tema:"Gastroenterología",
- subtema:"Crohn",
- dificultad:"Media",
-
- pregunta:"¿Cuál es una complicación típica de la enfermedad de Crohn?",
-
- opciones:{
-  A:"Fístulas",
-  B:"Megacolon tóxico obligatorio",
-  C:"Varices esofágicas",
-  D:"Acalasia"
- },
-
- correcta:"A",
-
- explicacion:"Las fístulas son una complicación clásica por afectación transmural.",
-
- bibliografia:[
-  "Harrison - EII"
- ]
+pregunta:"Paciente de 71 años con fiebre persistente y pérdida de peso presenta hemocultivos positivos repetidos. ¿Qué diagnóstico debe sospecharse?",
+opciones:[
+"Neumonía atípica.",
+"Endocarditis infecciosa.",
+"Artritis séptica.",
+"Meningitis bacteriana."
+],
+respuesta:1
 },
 
 {
- id:35,
- tema:"Gastroenterología",
- subtema:"Colitis Ulcerosa",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el patrón característico de afectación?",
-
- opciones:{
-  A:"Continua desde recto",
-  B:"Salteada",
-  C:"Solo intestino delgado",
-  D:"Solo estómago"
- },
-
- correcta:"A",
-
- explicacion:"La colitis ulcerosa presenta afectación continua comenzando en recto.",
-
- bibliografia:[
-  "Harrison - EII"
- ]
+pregunta:"Mujer de 66 años consulta por polidipsia, poliuria y glucemia de 420 mg/dL. No presenta cetosis. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Cetoacidosis diabética.",
+"Estado hiperglucémico hiperosmolar.",
+"Hipoglucemia reactiva.",
+"SIADH."
+],
+respuesta:1
 },
 
 {
- id:36,
- tema:"Neurología",
- subtema:"ACV",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el principal factor de riesgo modificable para ACV?",
-
- opciones:{
-  A:"Hipertensión arterial",
-  B:"Sexo masculino",
-  C:"Edad",
-  D:"Genética"
- },
-
- correcta:"A",
-
- explicacion:"La hipertensión arterial es el factor de riesgo modificable más importante.",
-
- bibliografia:[
-  "Harrison - Enfermedad Cerebrovascular"
- ]
+pregunta:"Varón de 74 años con antecedente de tabaquismo presenta hematuria macroscópica indolora. ¿Cuál es la principal sospecha?",
+opciones:[
+"Infección urinaria.",
+"Cáncer urotelial.",
+"Nefrolitiasis.",
+"Glomerulonefritis."
+],
+respuesta:1
 },
 
 {
- id:37,
- tema:"Neurología",
- subtema:"ACV",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el estudio inicial ante sospecha de ACV agudo?",
-
- opciones:{
-  A:"TAC sin contraste",
-  B:"EEG",
-  C:"PET",
-  D:"Punción lumbar"
- },
-
- correcta:"A",
-
- explicacion:"La TAC permite diferenciar rápidamente ACV isquémico de hemorrágico.",
-
- bibliografia:[
-  "Guías Argentinas ACV"
- ]
+pregunta:"Paciente de 69 años con cirrosis consulta por deterioro del sensorio. Presenta asterixis. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Accidente cerebrovascular.",
+"Encefalopatía hepática.",
+"Meningitis.",
+"Demencia."
+],
+respuesta:1
 },
 
 {
- id:38,
- tema:"Neurología",
- subtema:"Parkinson",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el neurotransmisor deficitario?",
-
- opciones:{
-  A:"Dopamina",
-  B:"Serotonina",
-  C:"GABA",
-  D:"Noradrenalina"
- },
-
- correcta:"A",
-
- explicacion:"La degeneración nigroestriatal genera déficit dopaminérgico.",
-
- bibliografia:[
-  "Harrison - Enfermedad de Parkinson"
- ]
+pregunta:"Mujer de 61 años con osteoporosis recibe tratamiento con corticoides crónicos. ¿Cuál es la complicación ósea más probable?",
+opciones:[
+"Osteomalacia.",
+"Fracturas por fragilidad.",
+"Artritis séptica.",
+"Condrocalcinosis."
+],
+respuesta:1
 },
 
 {
- id:39,
- tema:"Neurología",
- subtema:"Parkinson",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el tratamiento más eficaz para los síntomas motores?",
-
- opciones:{
-  A:"Levodopa",
-  B:"Donepecilo",
-  C:"Valproato",
-  D:"Piridostigmina"
- },
-
- correcta:"A",
-
- explicacion:"La levodopa continúa siendo el tratamiento más efectivo para los síntomas motores.",
-
- bibliografia:[
-  "Harrison - Parkinson"
- ]
+pregunta:"Paciente de 72 años con fibrilación auricular consulta por dolor abdominal intenso, náuseas y examen físico poco llamativo. ¿Qué diagnóstico debe sospecharse?",
+opciones:[
+"Colecistitis.",
+"Isquemia mesentérica aguda.",
+"Pancreatitis.",
+"Apendicitis."
+],
+respuesta:1
 },
 
 {
- id:40,
- tema:"Neurología",
- subtema:"Alzheimer",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el principal factor de riesgo para enfermedad de Alzheimer?",
-
- opciones:{
-  A:"Edad avanzada",
-  B:"Hipotiroidismo",
-  C:"Asma",
-  D:"Colelitiasis"
- },
-
- correcta:"A",
-
- explicacion:"La edad avanzada es el principal factor de riesgo conocido.",
-
- bibliografia:[
-  "Harrison - Demencias"
- ]
+pregunta:"Varón de 60 años consulta por fiebre, soplo cardíaco y lesiones dolorosas en pulpejos digitales. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Vasculitis ANCA.",
+"Endocarditis infecciosa.",
+"Lupus eritematoso sistémico.",
+"Artritis reumatoidea."
+],
+respuesta:1
 },
 
 {
- id:41,
- tema:"Neurología",
- subtema:"Alzheimer",
- dificultad:"Media",
-
- pregunta:"¿Cuál suele ser el síntoma inicial más frecuente?",
-
- opciones:{
-  A:"Trastorno de memoria reciente",
-  B:"Hemiparesia",
-  C:"Temblor",
-  D:"Convulsiones"
- },
-
- correcta:"A",
-
- explicacion:"La alteración de la memoria episódica reciente suele ser la primera manifestación.",
-
- bibliografia:[
-  "Harrison - Demencias"
- ]
+pregunta:"Mujer de 67 años presenta disnea súbita, dolor pleurítico y taquicardia. ¿Qué diagnóstico debe descartarse prioritariamente?",
+opciones:[
+"Neumonía.",
+"Tromboembolismo pulmonar.",
+"EPOC.",
+"Bronquitis."
+],
+respuesta:1
 },
 
 {
- id:42,
- tema:"Neurología",
- subtema:"Guillain-Barré",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el patrón típico de debilidad muscular?",
-
- opciones:{
-  A:"Ascendente",
-  B:"Descendente",
-  C:"Hemicorporal",
-  D:"Facial aislada"
- },
-
- correcta:"A",
-
- explicacion:"La debilidad ascendente progresiva es una característica clásica.",
-
- bibliografia:[
-  "Harrison - Neuropatías"
- ]
+pregunta:"Paciente de 75 años con HTA consulta por dolor torácico irradiado a espalda y diferencia de pulsos entre ambos brazos. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"IAM.",
+"Disección aórtica.",
+"Pericarditis.",
+"TEP."
+],
+respuesta:1
 },
 
 {
- id:43,
- tema:"Neurología",
- subtema:"Guillain-Barré",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la principal causa de mortalidad?",
-
- opciones:{
-  A:"Insuficiencia respiratoria",
-  B:"Insuficiencia hepática",
-  C:"Hemorragia cerebral",
-  D:"Hipoglucemia"
- },
-
- correcta:"A",
-
- explicacion:"El compromiso respiratorio es la complicación más grave.",
-
- bibliografia:[
-  "Harrison - Guillain-Barré"
- ]
+pregunta:"Varón de 69 años con pérdida de peso y adenopatía supraclavicular izquierda. ¿Qué neoplasia debe sospecharse inicialmente?",
+opciones:[
+"Cáncer de próstata.",
+"Cáncer gástrico.",
+"Cáncer de piel.",
+"Cáncer de tiroides."
+],
+respuesta:1
 },
 
 {
- id:44,
- tema:"Neurología",
- subtema:"Miastenia Gravis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el tratamiento sintomático más utilizado?",
-
- opciones:{
-  A:"Piridostigmina",
-  B:"Levodopa",
-  C:"Fenitoína",
-  D:"Valproato"
- },
-
- correcta:"A",
-
- explicacion:"La piridostigmina mejora la transmisión neuromuscular al inhibir la acetilcolinesterasa.",
-
- bibliografia:[
-  "Harrison - Miastenia Gravis"
- ]
+pregunta:"Paciente de 63 años con insuficiencia renal presenta potasio de 7,1 mEq/L y cambios electrocardiográficos. ¿Cuál es la primera medida?",
+opciones:[
+"Hemodiálisis inmediata sin otra intervención.",
+"Gluconato de calcio intravenoso.",
+"Restringir potasio en la dieta.",
+"Furosemida oral."
+],
+respuesta:1
 },
 
 {
- id:45,
- tema:"Neurología",
- subtema:"Miastenia Gravis",
- dificultad:"Media",
-
- pregunta:"¿Qué órgano se encuentra frecuentemente alterado?",
-
- opciones:{
-  A:"Timo",
-  B:"Páncreas",
-  C:"Hipófisis",
-  D:"Bazo"
- },
-
- correcta:"A",
-
- explicacion:"La hiperplasia tímica y el timoma son asociaciones clásicas.",
-
- bibliografia:[
-  "Harrison - Miastenia"
- ]
+pregunta:"Mujer de 70 años presenta dolor temporal, VSG elevada y disminución visual progresiva. ¿Cuál es la conducta inmediata?",
+opciones:[
+"Esperar biopsia.",
+"Iniciar corticoides.",
+"Indicar AINEs.",
+"Solicitar RMN."
+],
+respuesta:1
 },
 
 {
- id:46,
- tema:"Endocrinología",
- subtema:"Diabetes Mellitus",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el valor diagnóstico de HbA1c para diabetes?",
-
- opciones:{
-  A:">=5,7%",
-  B:">=6,5%",
-  C:">=7%",
-  D:">=8%"
- },
-
- correcta:"B",
-
- explicacion:"Una HbA1c igual o superior a 6,5% es criterio diagnóstico de diabetes.",
-
- bibliografia:[
-  "ADA",
-  "Harrison - Diabetes"
- ]
+pregunta:"Paciente de 65 años con antecedentes de tabaquismo presenta síndrome constitucional y SIADH. ¿Qué neoplasia se asocia clásicamente?",
+opciones:[
+"Adenocarcinoma pulmonar.",
+"Carcinoma microcítico de pulmón.",
+"Mesotelioma.",
+"Hamartoma pulmonar."
+],
+respuesta:1
 },
 
 {
- id:47,
- tema:"Endocrinología",
- subtema:"Diabetes Mellitus",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la principal alteración fisiopatológica inicial en DM2?",
-
- opciones:{
-  A:"Resistencia a la insulina",
-  B:"Ausencia total de insulina",
-  C:"Déficit de glucagón",
-  D:"Exceso de ACTH"
- },
-
- correcta:"A",
-
- explicacion:"La resistencia periférica a la insulina es el mecanismo fisiopatológico predominante.",
-
- bibliografia:[
-  "Harrison - Diabetes Mellitus"
- ]
+pregunta:"Varón de 68 años consulta por síncope. ECG muestra bloqueo AV completo. ¿Cuál es el tratamiento definitivo?",
+opciones:[
+"Betabloqueantes.",
+"Marcapasos permanente.",
+"Amiodarona.",
+"Aspirina."
+],
+respuesta:1
 },
 
 {
- id:48,
- tema:"Endocrinología",
- subtema:"Cetoacidosis Diabética",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el trastorno ácido-base característico?",
-
- opciones:{
-  A:"Acidosis metabólica con anión gap elevado",
-  B:"Alcalosis metabólica",
-  C:"Acidosis respiratoria",
-  D:"Alcalosis respiratoria"
- },
-
- correcta:"A",
-
- explicacion:"La acumulación de cuerpos cetónicos produce acidosis metabólica con anión gap elevado.",
-
- bibliografia:[
-  "Harrison - Emergencias Endocrinológicas"
- ]
+pregunta:"Paciente de 72 años con fiebre, hipotensión y lactato elevado. ¿Cuál es el diagnóstico sindrómico?",
+opciones:[
+"SIRS.",
+"Shock séptico.",
+"Hipovolemia leve.",
+"Insuficiencia cardíaca estable."
+],
+respuesta:1
 },
 
 {
- id:49,
- tema:"Endocrinología",
- subtema:"Hipotiroidismo",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la causa más frecuente de hipotiroidismo en áreas con suficiente yodo?",
-
- opciones:{
-  A:"Tiroiditis de Hashimoto",
-  B:"Déficit de yodo",
-  C:"Tumor hipofisario",
-  D:"Amiodarona"
- },
-
- correcta:"A",
-
- explicacion:"La tiroiditis autoinmune de Hashimoto es la causa más frecuente.",
-
- bibliografia:[
-  "Harrison - Trastornos Tiroideos"
- ]
+pregunta:"Mujer de 64 años consulta por artritis de pequeñas articulaciones de manos, rigidez matinal de más de una hora y factor reumatoideo positivo. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Osteoartrosis.",
+"Artritis reumatoidea.",
+"Gota.",
+"Fibromialgia."
+],
+respuesta:1
 },
 
 {
- id:50,
- tema:"Endocrinología",
- subtema:"Hipertiroidismo",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el hallazgo de laboratorio típico del hipertiroidismo primario?",
-
- opciones:{
-  A:"TSH disminuida",
-  B:"TSH elevada",
-  C:"TSH normal obligatoria",
-  D:"ACTH elevada"
- },
-
- correcta:"A",
-
- explicacion:"El exceso de hormonas tiroideas produce supresión de la TSH por retroalimentación negativa.",
-
- bibliografia:[
-  "Harrison - Hipertiroidismo"
- ]
+pregunta:"Paciente de 71 años presenta dolor lumbar, anemia, insuficiencia renal e hipercalcemia. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Metástasis óseas.",
+"Mieloma múltiple.",
+"Leucemia linfática crónica.",
+"Polimialgia reumática."
+],
+respuesta:1
 },
-
-,
 
 {
- id:51,
- tema:"Nefrología",
- subtema:"Enfermedad Renal Crónica",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el parámetro utilizado para estadificar la enfermedad renal crónica?",
-
- opciones:{
-  A:"Filtrado glomerular estimado",
-  B:"Sodio sérico",
-  C:"Hemoglobina",
-  D:"Calcemia"
- },
-
- correcta:"A",
-
- explicacion:"La clasificación KDIGO se basa principalmente en el filtrado glomerular estimado y la albuminuria.",
-
- bibliografia:[
-  "KDIGO Clinical Practice Guideline",
-  "Harrison - Enfermedad Renal Crónica"
- ]
+pregunta:"Varón de 72 años con fibrilación auricular anticoagulada consulta por hemiparesia derecha de 70 minutos de evolución. TC de cerebro sin hemorragia. NIHSS 12. INR 1,1. ¿Cuál es la conducta más adecuada?",
+opciones:[
+"Iniciar aspirina y reevaluar en 24 horas.",
+"Administrar trombólisis intravenosa si no existen otras contraindicaciones.",
+"Iniciar heparina sódica por el antecedente de fibrilación auricular.",
+"Esperar el resultado de una resonancia antes de decidir tratamiento."
+],
+respuesta:1
 },
 
 {
- id:52,
- tema:"Nefrología",
- subtema:"Enfermedad Renal Crónica",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la principal causa de enfermedad renal crónica en Argentina y en el mundo?",
-
- opciones:{
-  A:"Diabetes Mellitus",
-  B:"Lupus Eritematoso Sistémico",
-  C:"Amiloidosis",
-  D:"Poliquistosis renal"
- },
-
- correcta:"A",
-
- explicacion:"La nefropatía diabética constituye la principal causa de enfermedad renal crónica.",
-
- bibliografia:[
-  "Harrison - Nefropatía Diabética"
- ]
+pregunta:"Paciente de 67 años consulta por dolor torácico de 2 horas de evolución. ECG con infradesnivel de ST en V1-V3 y ondas R prominentes en esas derivaciones. Troponina inicial negativa. ¿Cuál es la conducta más apropiada?",
+opciones:[
+"Alta con prueba funcional ambulatoria.",
+"Interpretar el cuadro como IAM posterior y activar estrategia invasiva urgente.",
+"Repetir troponinas a las 6 horas antes de decidir conducta.",
+"Iniciar IBP y observar evolución."
+],
+respuesta:1
 },
 
 {
- id:53,
- tema:"Nefrología",
- subtema:"Hiperkalemia",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el tratamiento que estabiliza inmediatamente la membrana miocárdica?",
-
- opciones:{
-  A:"Insulina",
-  B:"Gluconato de calcio",
-  C:"Furosemida",
-  D:"Salbutamol"
- },
-
- correcta:"B",
-
- explicacion:"El calcio intravenoso reduce el riesgo de arritmias sin modificar significativamente la concentración sérica de potasio.",
-
- bibliografia:[
-  "Harrison - Trastornos Electrolíticos"
- ]
+pregunta:"Mujer de 75 años con antecedente de HTA consulta por dolor abdominal intenso de inicio súbito. TA 90/60 mmHg. Lactato 5 mmol/L. El abdomen presenta escasos hallazgos al examen físico. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Pancreatitis aguda grave.",
+"Isquemia mesentérica aguda.",
+"Diverticulitis complicada.",
+"Perforación de víscera hueca."
+],
+respuesta:1
 },
 
 {
- id:54,
- tema:"Nefrología",
- subtema:"Hiperkalemia",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el hallazgo electrocardiográfico más precoz de la hiperkalemia?",
-
- opciones:{
-  A:"Ondas T picudas",
-  B:"Ondas U",
-  C:"Bloqueo AV completo",
-  D:"Fibrilación auricular"
- },
-
- correcta:"A",
-
- explicacion:"Las ondas T altas y picudas suelen ser el primer cambio electrocardiográfico.",
-
- bibliografia:[
-  "Harrison - Potasio"
- ]
+pregunta:"Paciente de 70 años con EPOC severo consulta por aumento de disnea. Gasometría: pH 7,24; PaCO2 72 mmHg; PaO2 55 mmHg. Se encuentra vigil y colaborador. ¿Cuál es la conducta inicial más adecuada?",
+opciones:[
+"Intubación orotraqueal inmediata.",
+"Ventilación no invasiva.",
+"Oxígeno por cánula nasal exclusivamente.",
+"Administrar bicarbonato intravenoso."
+],
+respuesta:1
 },
 
 {
- id:55,
- tema:"Nefrología",
- subtema:"Síndrome Nefrótico",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el criterio clásico de proteinuria para definir síndrome nefrótico?",
-
- opciones:{
-  A:">300 mg/día",
-  B:">1 g/día",
-  C:">3,5 g/día",
-  D:">10 g/día"
- },
-
- correcta:"C",
-
- explicacion:"El síndrome nefrótico se caracteriza por proteinuria superior a 3,5 gramos por día.",
-
- bibliografia:[
-  "Harrison - Glomerulopatías"
- ]
+pregunta:"Varón de 69 años con antecedente de cáncer de próstata consulta por dolor lumbar progresivo y debilidad en ambos miembros inferiores. ¿Cuál es la conducta más urgente?",
+opciones:[
+"Solicitar centellograma óseo.",
+"Iniciar dexametasona y evaluar compresión medular.",
+"Indicar analgésicos y control ambulatorio.",
+"Solicitar densitometría."
+],
+respuesta:1
 },
 
 {
- id:56,
- tema:"Nefrología",
- subtema:"Síndrome Nefrótico",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el hallazgo clínico más frecuente?",
-
- opciones:{
-  A:"Edema",
-  B:"Hemoptisis",
-  C:"Ictericia",
-  D:"Disuria"
- },
-
- correcta:"A",
-
- explicacion:"La pérdida masiva de proteínas produce disminución de la presión oncótica y edema.",
-
- bibliografia:[
-  "Harrison - Síndrome Nefrótico"
- ]
+pregunta:"Mujer de 68 años con artritis reumatoidea en tratamiento inmunosupresor consulta por fiebre y neutropenia severa. ¿Cuál es la conducta inicial más apropiada?",
+opciones:[
+"Esperar hemocultivos antes de iniciar tratamiento.",
+"Iniciar antibióticos de amplio espectro de inmediato.",
+"Administrar corticoides sistémicos.",
+"Alta con seguimiento ambulatorio."
+],
+respuesta:1
 },
 
 {
- id:57,
- tema:"Nefrología",
- subtema:"Glomerulonefritis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el hallazgo urinario más característico de hematuria glomerular?",
-
- opciones:{
-  A:"Cristales de oxalato",
-  B:"Hematíes dismórficos",
-  C:"Bacterias",
-  D:"Levaduras"
- },
-
- correcta:"B",
-
- explicacion:"Los hematíes dismórficos sugieren origen glomerular de la hematuria.",
-
- bibliografia:[
-  "Harrison - Sedimento Urinario"
- ]
+pregunta:"Paciente de 71 años con insuficiencia cardíaca consulta por disnea progresiva. Presenta FEVI 30%, BNP elevado y congestión pulmonar. ¿Cuál de las siguientes intervenciones ha demostrado reducir mortalidad?",
+opciones:[
+"Digoxina.",
+"IECA o ARNI.",
+"Nitratos aislados.",
+"Furosemida exclusivamente."
+],
+respuesta:1
 },
 
 {
- id:58,
- tema:"Nefrología",
- subtema:"Insuficiencia Renal Aguda",
- dificultad:"Difícil",
-
- pregunta:"¿Cuál es una indicación absoluta de diálisis urgente?",
-
- opciones:{
-  A:"Hiperkalemia refractaria",
-  B:"Creatinina 2 mg/dL",
-  C:"Proteinuria",
-  D:"Hematuria microscópica"
- },
-
- correcta:"A",
-
- explicacion:"La hiperkalemia refractaria representa una emergencia dialítica.",
-
- bibliografia:[
-  "KDIGO AKI Guideline"
- ]
+pregunta:"Varón de 64 años con diabetes consulta por fiebre y dolor en pie derecho. Presenta úlcera plantar profunda con exposición ósea. ¿Cuál es el estudio más útil para confirmar osteomielitis?",
+opciones:[
+"Radiografía simple normal descarta el diagnóstico.",
+"Resonancia magnética.",
+"Ecografía Doppler.",
+"Tomografía cerebral."
+],
+respuesta:1
 },
 
 {
- id:59,
- tema:"Hematología",
- subtema:"Anemia Ferropénica",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la causa más frecuente de anemia en el mundo?",
-
- opciones:{
-  A:"Ferropenia",
-  B:"Déficit de B12",
-  C:"Hemólisis",
-  D:"Aplasia medular"
- },
-
- correcta:"A",
-
- explicacion:"La deficiencia de hierro es la principal causa de anemia a nivel mundial.",
-
- bibliografia:[
-  "Harrison - Anemias"
- ]
+pregunta:"Paciente de 76 años consulta por síncope. ECG: bloqueo AV completo con frecuencia ventricular de 32 lpm. ¿Cuál es la conducta definitiva?",
+opciones:[
+"Amiodarona.",
+"Marcapasos permanente.",
+"Betabloqueantes.",
+"Anticoagulación."
+],
+respuesta:1
 },
 
 {
- id:60,
- tema:"Hematología",
- subtema:"Anemia Ferropénica",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el estudio más útil para evaluar reservas de hierro?",
-
- opciones:{
-  A:"Ferritina",
-  B:"VCM",
-  C:"Reticulocitos",
-  D:"Hematocrito"
- },
-
- correcta:"A",
-
- explicacion:"La ferritina es el mejor marcador de depósitos corporales de hierro.",
-
- bibliografia:[
-  "Harrison - Anemia Ferropénica"
- ]
+pregunta:"Mujer de 73 años con cefalea temporal, VSG 110 mm/h y amaurosis fugaz. ¿Cuál es el principal objetivo del tratamiento inmediato?",
+opciones:[
+"Aliviar la cefalea.",
+"Prevenir ceguera irreversible.",
+"Disminuir la VSG.",
+"Evitar osteoporosis."
+],
+respuesta:1
 },
 
 {
- id:61,
- tema:"Hematología",
- subtema:"Mieloma Múltiple",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el síntoma más frecuente al diagnóstico?",
-
- opciones:{
-  A:"Dolor óseo",
-  B:"Hemoptisis",
-  C:"Diarrea",
-  D:"Disfagia"
- },
-
- correcta:"A",
-
- explicacion:"El dolor óseo, especialmente vertebral, es la manifestación clínica más frecuente.",
-
- bibliografia:[
-  "Harrison - Mieloma Múltiple"
- ]
+pregunta:"Paciente de 66 años con FA consulta por dolor y palidez súbita en miembro inferior izquierdo. No se palpan pulsos distales. ¿Cuál es la primera conducta?",
+opciones:[
+"Solicitar ecografía Doppler y esperar resultado.",
+"Iniciar anticoagulación sistémica inmediata.",
+"Administrar trombolíticos sistémicos sin estudios.",
+"Indicar reposo y observación."
+],
+respuesta:1
 },
 
 {
- id:62,
- tema:"Hematología",
- subtema:"Mieloma Múltiple",
- dificultad:"Media",
-
- pregunta:"¿Qué estudio suele mostrar un pico monoclonal?",
-
- opciones:{
-  A:"Proteinograma electroforético",
-  B:"ECG",
-  C:"Radiografía",
-  D:"Espirometría"
- },
-
- correcta:"A",
-
- explicacion:"La electroforesis de proteínas permite identificar la proteína monoclonal.",
-
- bibliografia:[
-  "Harrison - Gammapatías Monoclonales"
- ]
+pregunta:"Varón de 62 años con cirrosis consulta por hematemesis abundante. TA 85/50 mmHg. ¿Cuál es la medida específica que debe iniciarse precozmente además de la reanimación?",
+opciones:[
+"Heparina.",
+"Vasoactivos como octreótido o terlipresina.",
+"Aspirina.",
+"Corticoides."
+],
+respuesta:1
 },
 
 {
- id:63,
- tema:"Hematología",
- subtema:"Leucemia Mieloide Crónica",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la alteración genética característica?",
-
- opciones:{
-  A:"BCR-ABL",
-  B:"JAK2",
-  C:"FLT3",
-  D:"RET"
- },
-
- correcta:"A",
-
- explicacion:"La translocación t(9;22) produce el cromosoma Filadelfia y el gen BCR-ABL.",
-
- bibliografia:[
-  "Harrison - Leucemia Mieloide Crónica"
- ]
+pregunta:"Paciente de 74 años con insuficiencia renal crónica presenta K+ 7,2 mEq/L y ondas T picudas. ¿Qué tratamiento debe administrarse primero?",
+opciones:[
+"Insulina con glucosa.",
+"Gluconato de calcio intravenoso.",
+"Resinas de intercambio.",
+"Hemodiálisis."
+],
+respuesta:1
 },
 
 {
- id:64,
- tema:"Hematología",
- subtema:"Leucemia Mieloide Crónica",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el tratamiento dirigido de primera línea?",
-
- opciones:{
-  A:"Imatinib",
-  B:"Rituximab",
-  C:"Prednisona",
-  D:"ATRA"
- },
-
- correcta:"A",
-
- explicacion:"Los inhibidores de tirosina quinasa revolucionaron el tratamiento de la LMC.",
-
- bibliografia:[
-  "Harrison - Leucemias"
- ]
+pregunta:"Mujer de 65 años consulta por pérdida de peso, anemia y sangre oculta positiva. Colonoscopia: lesión estenosante en colon derecho. ¿Cuál es el siguiente estudio para estadificación?",
+opciones:[
+"PET de rutina.",
+"TC de tórax, abdomen y pelvis.",
+"RM cerebral.",
+"Ecocardiograma."
+],
+respuesta:1
 },
 
 {
- id:65,
- tema:"Hematología",
- subtema:"Policitemia Vera",
- dificultad:"Media",
-
- pregunta:"¿Qué mutación está presente en la mayoría de los casos?",
-
- opciones:{
-  A:"JAK2",
-  B:"RET",
-  C:"FLT3",
-  D:"BCR-ABL"
- },
-
- correcta:"A",
-
- explicacion:"La mutación JAK2 V617F está presente en la gran mayoría de los pacientes.",
-
- bibliografia:[
-  "Harrison - Neoplasias Mieloproliferativas"
- ]
+pregunta:"Paciente con fiebre, soplo nuevo y hemocultivos positivos para Staphylococcus aureus. Ecocardiograma transtorácico negativo. ¿Cuál es el siguiente paso?",
+opciones:[
+"Descartar endocarditis.",
+"Solicitar ecocardiograma transesofágico.",
+"Suspender antibióticos.",
+"Esperar nuevos síntomas."
+],
+respuesta:1
 },
 
 {
- id:66,
- tema:"Reumatología",
- subtema:"Artritis Reumatoidea",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el anticuerpo más específico para artritis reumatoidea?",
-
- opciones:{
-  A:"ANA",
-  B:"Anti-CCP",
-  C:"ANCA",
-  D:"AMA"
- },
-
- correcta:"B",
-
- explicacion:"Los anticuerpos anti-CCP tienen alta especificidad para artritis reumatoidea.",
-
- bibliografia:[
-  "Harrison - Artritis Reumatoidea"
- ]
+pregunta:"Varón de 78 años consulta por dolor torácico irradiado a espalda. TA 180/100 mmHg. Se detecta diferencia de presión arterial entre ambos brazos. ¿Cuál es el estudio diagnóstico inicial de elección si está hemodinámicamente estable?",
+opciones:[
+"Ergometría.",
+"Angio-TC de aorta.",
+"Ecografía abdominal.",
+"Centellograma."
+],
+respuesta:1
 },
 
 {
- id:67,
- tema:"Reumatología",
- subtema:"Artritis Reumatoidea",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el FAME de primera línea más utilizado?",
-
- opciones:{
-  A:"Metotrexato",
-  B:"Colchicina",
-  C:"Alopurinol",
-  D:"Prednisona"
- },
-
- correcta:"A",
-
- explicacion:"El metotrexato es el tratamiento de base de elección en la mayoría de los pacientes.",
-
- bibliografia:[
-  "Guías Argentinas de AR"
- ]
+pregunta:"Paciente de 70 años con insuficiencia cardíaca presenta hiponatremia de 122 mEq/L sin síntomas neurológicos. ¿Cuál es la conducta inicial más apropiada?",
+opciones:[
+"Solución hipertónica inmediata.",
+"Restricción hídrica y tratamiento de la causa.",
+"Bicarbonato intravenoso.",
+"Hemodiálisis."
+],
+respuesta:1
 },
 
 {
- id:68,
- tema:"Reumatología",
- subtema:"Lupus Eritematoso Sistémico",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el anticuerpo más sensible para LES?",
-
- opciones:{
-  A:"ANA",
-  B:"Anti-Sm",
-  C:"ANCA",
-  D:"AMA"
- },
-
- correcta:"A",
-
- explicacion:"Los ANA poseen elevada sensibilidad para lupus eritematoso sistémico.",
-
- bibliografia:[
-  "Harrison - Lupus"
- ]
+pregunta:"Mujer de 63 años consulta por debilidad muscular proximal, erupción heliotropo y elevación de CPK. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Lupus eritematoso sistémico.",
+"Dermatomiositis.",
+"Fibromialgia.",
+"Polimialgia reumática."
+],
+respuesta:1
 },
 
 {
- id:69,
- tema:"Reumatología",
- subtema:"Lupus Eritematoso Sistémico",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el anticuerpo más específico para LES?",
-
- opciones:{
-  A:"ANA",
-  B:"Anti-Sm",
-  C:"Factor Reumatoideo",
-  D:"Anti-Ro"
- },
-
- correcta:"B",
-
- explicacion:"Los anticuerpos anti-Sm presentan alta especificidad para lupus.",
-
- bibliografia:[
-  "Harrison - Lupus"
- ]
+pregunta:"Paciente de 67 años con mieloma múltiple presenta deterioro renal agudo. ¿Cuál es el mecanismo más frecuente?",
+opciones:[
+"Glomerulonefritis rápidamente progresiva.",
+"Nefropatía por cilindros de cadenas ligeras.",
+"Nefropatía membranosa.",
+"Síndrome hepatorrenal."
+],
+respuesta:1
 },
 
 {
- id:70,
- tema:"Reumatología",
- subtema:"Gota",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la articulación clásicamente afectada en el primer ataque?",
-
- opciones:{
-  A:"Primer metatarsofalángica",
-  B:"Cadera",
-  C:"Hombro",
-  D:"Temporomandibular"
- },
-
- correcta:"A",
-
- explicacion:"La podagra es la presentación clásica de la gota.",
-
- bibliografia:[
-  "Harrison - Gota"
- ]
+pregunta:"Varón de 71 años consulta por pérdida brusca e indolora de visión monocular. Fondo de ojo: retina pálida con mancha rojo cereza. ¿Cuál es el diagnóstico?",
+opciones:[
+"Desprendimiento de retina.",
+"Oclusión de la arteria central de la retina.",
+"Glaucoma agudo.",
+"Retinopatía diabética."
+],
+respuesta:1
 },
 
 {
- id:71,
- tema:"Reumatología",
- subtema:"Gota",
- dificultad:"Media",
-
- pregunta:"¿Qué tipo de cristales se observan en líquido sinovial?",
-
- opciones:{
-  A:"Urato monosódico",
-  B:"Pirofosfato cálcico",
-  C:"Oxalato",
-  D:"Colesterol"
- },
-
- correcta:"A",
-
- explicacion:"Los cristales de urato monosódico presentan birrefringencia negativa.",
-
- bibliografia:[
-  "Harrison - Artritis por Cristales"
- ]
+pregunta:"Paciente con shock séptico recibe fluidos adecuados. PAM persiste en 55 mmHg. ¿Cuál es el vasopresor de primera elección?",
+opciones:[
+"Dopamina.",
+"Noradrenalina.",
+"Adrenalina.",
+"Fenilefrina."
+],
+respuesta:1
 },
 
 {
- id:72,
- tema:"Dermatología",
- subtema:"Psoriasis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la forma clínica más frecuente?",
-
- opciones:{
-  A:"Psoriasis en placas",
-  B:"Psoriasis pustulosa",
-  C:"Psoriasis eritrodérmica",
-  D:"Psoriasis invertida"
- },
-
- correcta:"A",
-
- explicacion:"La psoriasis vulgar o en placas representa la forma más frecuente.",
-
- bibliografia:[
-  "Harrison - Psoriasis"
- ]
+pregunta:"Varón de 68 años con tabaquismo intenso presenta hiponatremia, osmolaridad plasmática baja y osmolaridad urinaria alta. ¿Qué diagnóstico debe sospecharse?",
+opciones:[
+"Diabetes insípida.",
+"SIADH secundario a carcinoma microcítico.",
+"Polidipsia psicógena.",
+"Hipotiroidismo."
+],
+respuesta:1
 },
 
 {
- id:73,
- tema:"Dermatología",
- subtema:"Psoriasis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el fenómeno desencadenado por traumatismos cutáneos?",
-
- opciones:{
-  A:"Koebner",
-  B:"Nikolsky",
-  C:"Darier",
-  D:"Pathergy"
- },
-
- correcta:"A",
-
- explicacion:"El fenómeno de Koebner consiste en aparición de lesiones sobre áreas traumatizadas.",
-
- bibliografia:[
-  "Harrison - Dermatología"
- ]
+pregunta:"Paciente de 75 años con FA consulta por dolor abdominal intenso. Angio-TC confirma isquemia mesentérica por embolia arterial. ¿Cuál es el tratamiento definitivo más apropiado?",
+opciones:[
+"Antibióticos exclusivamente.",
+"Revascularización urgente.",
+"Observación clínica.",
+"Corticoides."
+],
+respuesta:1
 },
 
 {
- id:74,
- tema:"Medicina Crítica",
- subtema:"Sepsis",
- dificultad:"Difícil",
-
- pregunta:"¿Cuál es el vasopresor de primera elección en shock séptico?",
-
- opciones:{
-  A:"Noradrenalina",
-  B:"Dopamina",
-  C:"Dobutamina",
-  D:"Milrinona"
- },
-
- correcta:"A",
-
- explicacion:"La noradrenalina es el vasopresor recomendado como primera línea.",
-
- bibliografia:[
-  "Surviving Sepsis Campaign",
-  "Harrison - Sepsis"
- ]
+pregunta:"Mujer de 69 años con osteoporosis presenta fractura vertebral espontánea. Además de tratar la fractura, ¿qué intervención ha demostrado reducir nuevas fracturas?",
+opciones:[
+"Calcio aislado.",
+"Bifosfonatos.",
+"AINEs.",
+"Vitamina C."
+],
+respuesta:1
 },
 
 {
- id:75,
- tema:"Medicina Crítica",
- subtema:"Shock Séptico",
- dificultad:"Difícil",
-
- pregunta:"¿Cuál es el objetivo mínimo de presión arterial media durante la reanimación?",
-
- opciones:{
-  A:"65 mmHg",
-  B:"50 mmHg",
-  C:"80 mmHg",
-  D:"100 mmHg"
- },
-
- correcta:"A",
-
- explicacion:"Las guías recomiendan mantener una PAM mínima de 65 mmHg en la mayoría de los pacientes.",
-
- bibliografia:[
-  "Surviving Sepsis Campaign 2024",
-  "Harrison - Cuidados Críticos"
- ]
+pregunta:"Paciente de 72 años con anemia, insuficiencia renal, hipercalcemia y lesiones líticas óseas. ¿Cuál es el estudio que confirma el diagnóstico sospechado?",
+opciones:[
+"Dosaje de ferritina.",
+"Electroforesis e inmunofijación de proteínas.",
+"ANCA.",
+"Factor reumatoideo."
+],
+respuesta:1
 },
 
-,
-
 {
- id:76,
- tema:"Medicina Crítica",
- subtema:"Sepsis",
- dificultad:"Difícil",
-
- pregunta:"¿Cuál es el principal determinante pronóstico modificable en sepsis grave?",
-
- opciones:{
-  A:"Inicio precoz de antibióticos",
-  B:"Edad",
-  C:"Sexo",
-  D:"Grupo sanguíneo"
- },
-
- correcta:"A",
-
- explicacion:"La administración temprana de antibióticos adecuados reduce significativamente la mortalidad.",
-
- bibliografia:[
-  "Surviving Sepsis Campaign",
-  "Harrison - Sepsis"
- ]
+pregunta:"Varón de 66 años consulta por fiebre, disnea y tos productiva. Se diagnostica neumonía adquirida en la comunidad. A las pocas horas presenta hipotensión persistente pese a 30 ml/kg de cristaloides y lactato de 5 mmol/L. ¿Cuál es la conducta más adecuada?",
+opciones:[
+"Iniciar noradrenalina para mantener PAM ≥65 mmHg.",
+"Administrar más líquidos hasta normalizar el lactato antes de usar vasopresores.",
+"Esperar resultado de hemocultivos para ajustar tratamiento.",
+"Iniciar dopamina como vasopresor de elección."
+],
+respuesta:0
 },
 
 {
- id:77,
- tema:"Medicina Crítica",
- subtema:"Shock Séptico",
- dificultad:"Difícil",
-
- pregunta:"¿Cuál es el objetivo mínimo de diuresis durante la reanimación?",
-
- opciones:{
-  A:"0,5 ml/kg/h",
-  B:"0,1 ml/kg/h",
-  C:"2 ml/kg/h",
-  D:"5 ml/kg/h"
- },
-
- correcta:"A",
-
- explicacion:"Una diuresis ≥0,5 ml/kg/h es un marcador de perfusión renal adecuada.",
-
- bibliografia:[
-  "Surviving Sepsis Campaign"
- ]
+pregunta:"Paciente de 72 años con insuficiencia cardíaca y fibrilación auricular consulta por deterioro progresivo de la función renal tras iniciar ibuprofeno por lumbalgia. ¿Cuál es el mecanismo más probable?",
+opciones:[
+"Vasodilatación de la arteriola aferente.",
+"Inhibición de prostaglandinas con reducción de perfusión renal.",
+"Nefropatía diabética acelerada.",
+"Necrosis tubular por contraste."
+],
+respuesta:1
 },
 
 {
- id:78,
- tema:"Dermatología",
- subtema:"Melanoma",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el principal factor pronóstico en melanoma?",
-
- opciones:{
-  A:"Espesor de Breslow",
-  B:"Edad",
-  C:"Sexo",
-  D:"Localización"
- },
-
- correcta:"A",
-
- explicacion:"El espesor de Breslow es el factor pronóstico más importante para supervivencia.",
-
- bibliografia:[
-  "Harrison - Melanoma"
- ]
+pregunta:"Mujer de 70 años consulta por síncope. ECG: taquicardia ventricular monomorfa sostenida. Se encuentra hipotensa y confusa. ¿Cuál es la conducta inmediata?",
+opciones:[
+"Amiodarona intravenosa.",
+"Cardioversión sincronizada urgente.",
+"Adenosina.",
+"Betabloqueantes."
+],
+respuesta:1
 },
 
 {
- id:79,
- tema:"Dermatología",
- subtema:"Melanoma",
- dificultad:"Media",
-
- pregunta:"¿Qué representa la letra D en la regla ABCDE?",
-
- opciones:{
-  A:"Dolor",
-  B:"Diámetro",
-  C:"Densidad",
-  D:"Descamación"
- },
-
- correcta:"B",
-
- explicacion:"La letra D corresponde a diámetro mayor de 6 mm.",
-
- bibliografia:[
-  "Harrison - Dermatología"
- ]
+pregunta:"Paciente de 65 años con cirrosis presenta ascitis. Paracentesis: gradiente albúmina sérica-ascitis >1,1 g/dL. ¿Qué indica este hallazgo?",
+opciones:[
+"Ascitis por carcinomatosis.",
+"Ascitis secundaria a hipertensión portal.",
+"Peritonitis bacteriana espontánea.",
+"Pancreatitis."
+],
+respuesta:1
 },
 
 {
- id:80,
- tema:"Dermatología",
- subtema:"Herpes Zóster",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la complicación más frecuente?",
-
- opciones:{
-  A:"Neuralgia postherpética",
-  B:"Miocarditis",
-  C:"Nefritis",
-  D:"Pancreatitis"
- },
-
- correcta:"A",
-
- explicacion:"La neuralgia postherpética es la secuela más frecuente, especialmente en adultos mayores.",
-
- bibliografia:[
-  "Harrison - Infecciones por Herpesvirus"
- ]
+pregunta:"Varón de 74 años con antecedentes de tabaquismo presenta síndrome constitucional. TC: masa pulmonar central. Hiponatremia de 118 mEq/L. ¿Cuál es el subtipo histológico más probable?",
+opciones:[
+"Adenocarcinoma.",
+"Carcinoma microcítico.",
+"Carcinoma escamoso.",
+"Hamartoma."
+],
+respuesta:1
 },
 
 {
- id:81,
- tema:"Dermatología",
- subtema:"Impétigo",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el agente causal más frecuente?",
-
- opciones:{
-  A:"Staphylococcus aureus",
-  B:"Candida albicans",
-  C:"Pseudomonas aeruginosa",
-  D:"Dermatofitos"
- },
-
- correcta:"A",
-
- explicacion:"Staphylococcus aureus es el principal agente etiológico del impétigo.",
-
- bibliografia:[
-  "Harrison - Infecciones Cutáneas"
- ]
+pregunta:"Paciente de 68 años consulta por dolor torácico. ECG con supradesnivel de ST en DII, DIII y aVF. TA 80/50 mmHg. Pulmones limpios. ¿Qué complicación debe sospecharse?",
+opciones:[
+"Rotura septal.",
+"Infarto de ventrículo derecho.",
+"Edema agudo de pulmón.",
+"Pericarditis."
+],
+respuesta:1
 },
 
 {
- id:82,
- tema:"Dermatología",
- subtema:"Escabiosis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el tratamiento tópico de elección?",
-
- opciones:{
-  A:"Permetrina al 5%",
-  B:"Aciclovir",
-  C:"Ketoconazol",
-  D:"Mupirocina"
- },
-
- correcta:"A",
-
- explicacion:"La permetrina tópica al 5% es el tratamiento de primera línea.",
-
- bibliografia:[
-  "Guías Argentinas de Dermatología"
- ]
+pregunta:"Mujer de 73 años con artritis reumatoidea consulta por neutropenia, esplenomegalia e infecciones recurrentes. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Síndrome de Felty.",
+"Leucemia mieloide crónica.",
+"Lupus eritematoso sistémico.",
+"Síndrome antifosfolípido."
+],
+respuesta:0
 },
 
 {
- id:83,
- tema:"Endocrinología",
- subtema:"Síndrome de Cushing",
- dificultad:"Difícil",
-
- pregunta:"¿Cuál es el test de screening más utilizado para síndrome de Cushing?",
-
- opciones:{
-  A:"TSH",
-  B:"Supresión con dexametasona 1 mg",
-  C:"ACTH basal",
-  D:"Insulina sérica"
- },
-
- correcta:"B",
-
- explicacion:"La prueba de supresión con dexametasona de 1 mg es uno de los estudios iniciales más utilizados.",
-
- bibliografia:[
-  "Harrison - Trastornos Suprarrenales"
- ]
+pregunta:"Paciente de 71 años con FA anticoagulada consulta por hematemesis masiva. INR 4,8. ¿Cuál es la medida más apropiada para revertir rápidamente la anticoagulación?",
+opciones:[
+"Vitamina K oral solamente.",
+"Complejo protrombínico + vitamina K intravenosa.",
+"Plasma solamente.",
+"Suspender anticoagulación y observar."
+],
+respuesta:1
 },
 
 {
- id:84,
- tema:"Endocrinología",
- subtema:"Feocromocitoma",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la manifestación clínica más frecuente?",
-
- opciones:{
-  A:"Hipertensión arterial",
-  B:"Hipotensión",
-  C:"Bradicardia",
-  D:"Hipoglucemia"
- },
-
- correcta:"A",
-
- explicacion:"La hipertensión arterial, paroxística o sostenida, es la manifestación más común.",
-
- bibliografia:[
-  "Harrison - Feocromocitoma"
- ]
+pregunta:"Varón de 69 años consulta por dolor lumbar y fiebre. Hemocultivos positivos para Staphylococcus aureus. ¿Qué diagnóstico debe descartarse prioritariamente?",
+opciones:[
+"Artrosis lumbar.",
+"Espondilodiscitis infecciosa.",
+"Fibromialgia.",
+"Hernia de disco."
+],
+respuesta:1
 },
 
 {
- id:85,
- tema:"Endocrinología",
- subtema:"Acromegalia",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el hallazgo físico más característico?",
-
- opciones:{
-  A:"Aumento de manos y pies",
-  B:"Exoftalmos",
-  C:"Hiperpigmentación",
-  D:"Ptosis"
- },
-
- correcta:"A",
-
- explicacion:"El crecimiento acral progresivo es característico de la acromegalia.",
-
- bibliografia:[
-  "Harrison - Hipófisis"
- ]
+pregunta:"Paciente con EPOC presenta pH 7,18 y PaCO2 85 mmHg pese a ventilación no invasiva adecuada. ¿Cuál es el siguiente paso?",
+opciones:[
+"Continuar igual 24 horas más.",
+"Intubación orotraqueal.",
+"Administrar bicarbonato.",
+"Aumentar oxígeno."
+],
+respuesta:1
 },
 
 {
- id:86,
- tema:"Endocrinología",
- subtema:"Insuficiencia Suprarrenal",
- dificultad:"Media",
-
- pregunta:"¿Cuál es un hallazgo característico de la enfermedad de Addison?",
-
- opciones:{
-  A:"Hiperpigmentación",
-  B:"Exoftalmos",
-  C:"Mixedema",
-  D:"Acantosis nigricans"
- },
-
- correcta:"A",
-
- explicacion:"El aumento de ACTH produce hiperpigmentación cutánea y mucosa.",
-
- bibliografia:[
-  "Harrison - Insuficiencia Suprarrenal"
- ]
+pregunta:"Mujer de 67 años consulta por debilidad proximal, disfagia y CPK elevada. Se diagnostica polimiositis. ¿Qué neoplasia asociada debe investigarse especialmente?",
+opciones:[
+"Melanoma.",
+"Cáncer oculto, especialmente ovario, pulmón y gastrointestinal.",
+"Cáncer de próstata.",
+"Tumores hipofisarios."
+],
+respuesta:1
 },
 
 {
- id:87,
- tema:"Endocrinología",
- subtema:"Hipercalcemia",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la causa más frecuente de hipercalcemia ambulatoria?",
-
- opciones:{
-  A:"Hiperparatiroidismo primario",
-  B:"Sarcoidosis",
-  C:"Vitamina D",
-  D:"Hipertiroidismo"
- },
-
- correcta:"A",
-
- explicacion:"El hiperparatiroidismo primario es la causa más frecuente en pacientes ambulatorios.",
-
- bibliografia:[
-  "Harrison - Paratiroides"
- ]
+pregunta:"Paciente de 75 años con dolor abdominal intenso presenta fibrilación auricular no anticoagulada. Angio-TC: embolia de arteria mesentérica superior. ¿Cuál es el factor pronóstico más importante?",
+opciones:[
+"Edad.",
+"Tiempo hasta la revascularización.",
+"Sexo.",
+"Presencia de HTA."
+],
+respuesta:1
 },
 
 {
- id:88,
- tema:"Neumonología",
- subtema:"Fibrosis Pulmonar Idiopática",
- dificultad:"Media",
-
- pregunta:"¿Qué patrón funcional respiratorio suele presentar?",
-
- opciones:{
-  A:"Restrictivo",
-  B:"Obstructivo",
-  C:"Normal",
-  D:"Mixto obligatorio"
- },
-
- correcta:"A",
-
- explicacion:"La fibrosis pulmonar produce disminución de volúmenes pulmonares y patrón restrictivo.",
-
- bibliografia:[
-  "Harrison - Enfermedades Intersticiales"
- ]
+pregunta:"Varón de 70 años presenta anemia normocítica, VSG elevada y proteinuria de Bence Jones. ¿Cuál es el diagnóstico más probable?",
+opciones:[
+"Leucemia linfática crónica.",
+"Mieloma múltiple.",
+"Linfoma folicular.",
+"Policitemia vera."
+],
+respuesta:1
 },
 
 {
- id:89,
- tema:"Neumonología",
- subtema:"Neumotórax",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el síntoma más frecuente?",
-
- opciones:{
-  A:"Dolor torácico súbito",
-  B:"Hematemesis",
-  C:"Disuria",
-  D:"Ascitis"
- },
-
- correcta:"A",
-
- explicacion:"El dolor torácico pleurítico de inicio brusco es la manifestación más frecuente.",
-
- bibliografia:[
-  "Harrison - Neumotórax"
- ]
+pregunta:"Paciente de 64 años consulta por fiebre y soplo nuevo. Hemocultivos positivos para Enterococcus faecalis. ¿Qué antecedente reciente aumenta la sospecha etiológica?",
+opciones:[
+"Colonoscopia o procedimiento urológico reciente.",
+"Vacunación antigripal.",
+"Viaje internacional.",
+"Traumatismo de cráneo."
+],
+respuesta:0
 },
 
 {
- id:90,
- tema:"Neumonología",
- subtema:"Sarcoidosis",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el hallazgo radiológico clásico?",
-
- opciones:{
-  A:"Adenopatías hiliares bilaterales",
-  B:"Neumotórax",
-  C:"Cavitaciones",
-  D:"Derrame pleural masivo"
- },
-
- correcta:"A",
-
- explicacion:"Las adenopatías hiliares bilaterales son el hallazgo más característico.",
-
- bibliografia:[
-  "Harrison - Sarcoidosis"
- ]
+pregunta:"Mujer de 78 años consulta por dolor torácico opresivo. ECG normal. Troponinas negativas. HEART score alto. ¿Cuál es la conducta más apropiada?",
+opciones:[
+"Alta inmediata.",
+"Observación y estratificación invasiva según evolución.",
+"Control ambulatorio en 6 meses.",
+"Tratamiento con IBP."
+],
+respuesta:1
 },
 
 {
- id:91,
- tema:"Neurología",
- subtema:"Hemorragia Subaracnoidea",
- dificultad:"Difícil",
-
- pregunta:"¿Qué fármaco se utiliza para prevenir vasoespasmo cerebral?",
-
- opciones:{
-  A:"Nimodipina",
-  B:"Levodopa",
-  C:"Aciclovir",
-  D:"Piridostigmina"
- },
-
- correcta:"A",
-
- explicacion:"La nimodipina reduce el riesgo de déficit neurológico asociado al vasoespasmo.",
-
- bibliografia:[
-  "Harrison - Hemorragia Subaracnoidea"
- ]
+pregunta:"Paciente con insuficiencia suprarrenal primaria presenta hipotensión severa, hiponatremia e hiperkalemia. ¿Cuál es el tratamiento inicial?",
+opciones:[
+"Hidrocortisona intravenosa y expansión con cristaloides.",
+"Levotiroxina.",
+"Restricción hídrica.",
+"Diuréticos."
+],
+respuesta:0
 },
 
 {
- id:92,
- tema:"Neurología",
- subtema:"Esclerosis Múltiple",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el estudio más importante para el diagnóstico?",
-
- opciones:{
-  A:"Resonancia Magnética",
-  B:"Radiografía",
-  C:"Ecografía",
-  D:"EEG"
- },
-
- correcta:"A",
-
- explicacion:"La resonancia magnética permite demostrar lesiones desmielinizantes diseminadas.",
-
- bibliografia:[
-  "Harrison - Esclerosis Múltiple"
- ]
+pregunta:"Varón de 68 años consulta por fiebre persistente tras colocación de prótesis valvular hace 2 meses. ¿Qué microorganismo debe considerarse prioritariamente?",
+opciones:[
+"Staphylococcus epidermidis.",
+"Haemophilus influenzae.",
+"Clostridium difficile.",
+"Mycoplasma."
+],
+respuesta:0
 },
 
 {
- id:93,
- tema:"Neurología",
- subtema:"Epilepsia",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el tiempo mínimo para considerar status epiléptico convulsivo?",
-
- opciones:{
-  A:"5 minutos",
-  B:"15 minutos",
-  C:"30 minutos",
-  D:"60 minutos"
- },
-
- correcta:"A",
-
- explicacion:"Actualmente se considera status epiléptico convulsivo a partir de los 5 minutos.",
-
- bibliografia:[
-  "Harrison - Epilepsia"
- ]
+pregunta:"Paciente de 73 años con insuficiencia cardíaca presenta FEVI 28%. ¿Cuál de los siguientes tratamientos reduce mortalidad?",
+opciones:[
+"Digoxina.",
+"Inhibidores SGLT2.",
+"Furosemida.",
+"Nitratos aislados."
+],
+respuesta:1
 },
 
 {
- id:94,
- tema:"Gastroenterología",
- subtema:"Hepatitis B",
- dificultad:"Media",
-
- pregunta:"¿Qué marcador indica inmunidad por vacunación?",
-
- opciones:{
-  A:"Anti-HBs",
-  B:"HBsAg",
-  C:"HBeAg",
-  D:"Anti-HBc IgM"
- },
-
- correcta:"A",
-
- explicacion:"La presencia aislada de anti-HBs indica inmunidad adquirida por vacunación.",
-
- bibliografia:[
-  "Harrison - Hepatitis Virales"
- ]
+pregunta:"Mujer de 71 años con osteoporosis recibe bifosfonatos desde hace años. Presenta dolor femoral persistente sin traumatismo. ¿Qué complicación debe sospecharse?",
+opciones:[
+"Metástasis ósea.",
+"Fractura atípica de fémur.",
+"Necrosis avascular.",
+"Osteomielitis."
+],
+respuesta:1
 },
 
 {
- id:95,
- tema:"Gastroenterología",
- subtema:"Hepatitis C",
- dificultad:"Media",
-
- pregunta:"¿Cuál es la principal complicación a largo plazo?",
-
- opciones:{
-  A:"Cirrosis",
-  B:"Apendicitis",
-  C:"Colecistitis",
-  D:"ERGE"
- },
-
- correcta:"A",
-
- explicacion:"La progresión a cirrosis constituye una de las complicaciones más importantes.",
-
- bibliografia:[
-  "Harrison - Hepatitis C"
- ]
+pregunta:"Paciente de 69 años con cirrosis presenta deterioro cognitivo. No tiene fiebre ni focalidad neurológica. Asterixis positiva. ¿Cuál es el tratamiento inicial más apropiado?",
+opciones:[
+"Ceftriaxona.",
+"Lactulosa.",
+"Haloperidol.",
+"Fenitoína."
+],
+respuesta:1
 },
 
 {
- id:96,
- tema:"Gastroenterología",
- subtema:"Colecistitis Aguda",
- dificultad:"Media",
-
- pregunta:"¿Cuál es el signo físico clásico?",
-
- opciones:{
-  A:"Murphy",
-  B:"Blumberg",
-  C:"Rovsing",
-  D:"Psoas"
- },
-
- correcta:"A",
-
- explicacion:"El signo de Murphy positivo es altamente sugestivo de colecistitis aguda.",
-
- bibliografia:[
-  "Harrison - Enfermedades de la Vesícula"
- ]
+pregunta:"Varón de 72 años con dolor torácico y soplo sistólico intenso irradiado a carótidas presenta síncope de esfuerzo. ¿Qué hallazgo indicaría necesidad de reemplazo valvular?",
+opciones:[
+"Estenosis aórtica severa sintomática.",
+"Hipertrofia ventricular aislada.",
+"Bloqueo AV de primer grado.",
+"Extrasístoles aisladas."
+],
+respuesta:0
 },
 
 {
- id:97,
- tema:"Hematología",
- subtema:"CID",
- dificultad:"Difícil",
-
- pregunta:"¿Cuál es un hallazgo típico de coagulación intravascular diseminada?",
-
- opciones:{
-  A:"Dímero D elevado",
-  B:"Ferritina baja",
-  C:"VCM elevado",
-  D:"Hierro sérico alto"
- },
-
- correcta:"A",
-
- explicacion:"La activación generalizada de la coagulación genera aumento del dímero D.",
-
- bibliografia:[
-  "Harrison - CID"
- ]
+pregunta:"Paciente de 75 años con enfermedad renal crónica avanzada consulta por pericarditis. ¿Cuál es la causa más probable?",
+opciones:[
+"Uremia.",
+"Endocarditis.",
+"Síndrome coronario.",
+"Neumonía."
+],
+respuesta:0
 },
 
 {
- id:98,
- tema:"Hematología",
- subtema:"Hemofilia A",
- dificultad:"Media",
-
- pregunta:"¿Qué factor de coagulación está disminuido?",
-
- opciones:{
-  A:"Factor VIII",
-  B:"Factor IX",
-  C:"Factor XI",
-  D:"Factor V"
- },
-
- correcta:"A",
-
- explicacion:"La hemofilia A se debe a déficit congénito del factor VIII.",
-
- bibliografia:[
-  "Harrison - Trastornos de la Coagulación"
- ]
+pregunta:"Mujer de 70 años con antecedente de cáncer de mama presenta cefalea y déficit neurológico focal progresivo. ¿Cuál es el estudio inicial más apropiado?",
+opciones:[
+"TC de cerebro con contraste.",
+"EEG.",
+"Punción lumbar.",
+"Radiografía de cráneo."
+],
+respuesta:0
 },
 
 {
- id:99,
- tema:"Reumatología",
- subtema:"Espondilitis Anquilosante",
- dificultad:"Media",
-
- pregunta:"¿Qué marcador genético se asocia clásicamente con esta enfermedad?",
-
- opciones:{
-  A:"HLA-B27",
-  B:"HLA-DR4",
-  C:"HLA-DR3",
-  D:"HLA-B51"
- },
-
- correcta:"A",
-
- explicacion:"La asociación con HLA-B27 es una de las más fuertes de toda la reumatología.",
-
- bibliografia:[
-  "Harrison - Espondiloartritis"
- ]
+pregunta:"Paciente de 66 años con diabetes consulta por edema agudo de pulmón e hipertensión severa. ¿Cuál es la prioridad terapéutica inicial?",
+opciones:[
+"Disminuir precarga y poscarga rápidamente.",
+"Administrar grandes volúmenes de líquidos.",
+"Suspender todo antihipertensivo.",
+"Administrar corticoides."
+],
+respuesta:0
 },
 
 {
- id:100,
- tema:"Reumatología",
- subtema:"Esclerosis Sistémica",
- dificultad:"Media",
-
- pregunta:"¿Cuál suele ser la manifestación clínica inicial más frecuente?",
-
- opciones:{
-  A:"Fenómeno de Raynaud",
-  B:"Glomerulonefritis",
-  C:"Hemoptisis",
-  D:"Uveítis"
- },
-
- correcta:"A",
-
- explicacion:"El fenómeno de Raynaud suele preceder durante años a otras manifestaciones de la enfermedad.",
-
- bibliografia:[
-  "Harrison - Esclerosis Sistémica"
- ]
+pregunta:"Varón de 73 años presenta hemoptisis masiva. Se encuentra hemodinámicamente estable pero con riesgo de asfixia. ¿Cuál es la prioridad inicial?",
+opciones:[
+"Proteger la vía aérea.",
+"Solicitar broncoscopia diferida.",
+"Esperar tomografía.",
+"Iniciar anticoagulación."
+],
+respuesta:0
 }
 
 ];
